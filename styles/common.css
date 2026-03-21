@@ -1,0 +1,46 @@
+* {
+  /* Zerando todos os estilos herdados*/
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* Foto de Liao Je Wei na unsplash.com */
+  /* Criando uma página infinita */
+  min-height: 100vh;
+  background-image: url("/src/images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  /* Controlando os elementos da página */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+main {
+  /* Preenchendo a página com a main para o rodapé descer a página */
+  flex: 1;
+
+  width: 100%;
+  max-width: 1200px;
+  padding: 10px;
+
+  border-radius: 20px;
+  border: 2px solid white;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 10px 10px 32px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
