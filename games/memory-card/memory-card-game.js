@@ -1,7 +1,7 @@
 const icons = ["💻", "🤖", "🚀", "🧠", "🔒", "🌐", "📚", "⚡"];
 const victoryScreen = document.getElementById("memory-game-win");
-const wrongSound = new Audio("src/sounds/wrong.wav");
-const winSound = new Audio("src/sounds/win.wav");
+//const wrongSound = new Audio("src/sounds/wrong.wav");
+//const winSound = new Audio("src/sounds/win.wav");
 
 //Repetindo os elementos para pares perfeitos, também me possibilita alterar
 //os dados em outro momento a partir de uma única variável que no momento é constante
