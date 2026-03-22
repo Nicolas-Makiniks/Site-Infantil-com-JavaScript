@@ -5,16 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Separando estilos por responsabilidades -->
     <link rel="stylesheet" href="styles/common.css" />
-    <link rel="stylesheet" href="styles/gameSection.css" />
     <link rel="stylesheet" href="styles/footer.css" />
+
+    <!-- Estilos de cada jogo -->
+    <link rel="stylesheet" href="games/memory-card/memory-card-game.css" />
     <title>Jogos Infantis</title>
   </head>
   <body>
     <main>
-      <section class="game-section">a</section>
-      <section class="game-section">ab</section>
-      <section class="game-section">abc</section>
-      <section class="game-section">abcd</section>
+      <section class="game-section">
+        <div id="memory-game"></div>
+        <div id="memory-game-win" class="win">
+          <h2>Parabén! Você venceu!! 🎉</h2>
+          <button onclick="location.reload()">Jogar Novamente</button>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="footer-section">
@@ -41,5 +46,7 @@
         </p>
       </div>
     </footer>
+    <!-- Separando lógicas por jogo -->
+    <script src="games/memory-card/memory-card-game.js"></script>
   </body>
 </html>
